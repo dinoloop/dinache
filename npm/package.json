@@ -1,0 +1,38 @@
+{
+    "name": "dinache",
+    "version": "0.0.1",
+    "description": "Restful light weight in-memory cache server built on top of node.js and dinoloop.",
+    "main": "index.js",
+    "typings": "index.d.ts",
+    "homepage": "https://github.com/dinoloop/dinache",
+    "bugs": "https://github.com/dinoloop/dinache/issues",
+    "author": "Dinoloop Team",
+    "license": "MIT",
+    "contributors": [
+        "ParallelTask"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dinoloop/dinache.git"
+    },
+    "keywords": [
+        "dinoloop",
+        "dinache",
+        "in-memory",
+        "cache",
+        "distributed",
+        "redis",
+        "rest",
+        "restful",
+        "node-express"
+    ],
+    "dependencies": {
+        "body-parser": "~1.18.3",
+        "dinoloop": "^2.1.0",
+        "express": "~4.16.3"
+    },
+    "engines": {
+        "node": ">= 8.10.x",
+        "npm": ">= 5.6.0"
+    }
+}

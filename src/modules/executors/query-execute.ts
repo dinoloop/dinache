@@ -9,7 +9,7 @@ export class QueryExecute {
             result.value = Cache.get(q.key);
         } else if (q.op === OPERATION.PUT) {
             if (Cache.put(q.key, q.value) === false) {
-                result.error === 'KEY_EXISTS';
+                result.error = 'KEY_EXISTS';
             }
         } else if (q.op === OPERATION.UPSERT) {
             Cache.upsert(q.key, q.value);
