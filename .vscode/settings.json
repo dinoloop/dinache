@@ -1,0 +1,29 @@
+{
+    "files.exclude": {
+        "node_modules": true,
+        "documentation": true,
+        "dist": true,
+        "public": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "editor.formatOnSave": true,
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "cSpell.words": [
+        "Karthik",
+        "Konkula",
+        "dinache",
+        "dinoloop",
+        "iquery",
+        "kkonkula",
+        "upsert"
+    ]
+}

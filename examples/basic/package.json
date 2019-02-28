@@ -1,0 +1,24 @@
+{
+    "name": "dinache-basic-example",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "npm run clean && tsc --p ./tsconfig.json",
+        "clean": "rimraf dist",
+        "serve": "node ./dist/examples/basic/src/app/app.js",
+        "start": "npm run build && npm run serve"
+    },
+    "dependencies": {
+        "dinache": "~0.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "~11.9.5",
+        "rimraf": "~2.5.2",
+        "typescript": "~2.4.2",
+        "source-map-support": "~0.5.10"
+    },
+    "engines": {
+        "node": ">= 8.10.x",
+        "npm": ">= 5.6.0"
+    }
+}
