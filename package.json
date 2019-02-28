@@ -21,7 +21,7 @@
     ],
     "scripts": {
         "build:example:basic": "npm run build --prefix ./examples/basic",
-        "build": "rpm run clean && tsc --p ./tsconfig.app.json",
+        "build": "npm run clean && tsc --p ./tsconfig.app.json",
         "clean": "rimraf dist",
         "lint": "tslint -p ./tsconfig.app.json -c ./tslint.json \"./src/**/*.ts*\"",
         "lint:test": "tslint -p ./tsconfig.spec.json -c ./tslint.json \"./tests/**/*.ts*\"",
