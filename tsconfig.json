@@ -5,14 +5,13 @@
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "inlineSourceMap": true,
         "lib": [
-            "es2017"
+            "es2017",
+            "dom"
         ],
         "typeRoots": [
             "node_modules/@types"
-        ],
-        "outDir": "./dist"
+        ]
     },
     "compileOnSave": false,
     "exclude": [

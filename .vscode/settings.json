@@ -23,7 +23,10 @@
         "dinache",
         "dinoloop",
         "iquery",
+        "kjhtml",
         "kkonkula",
+        "mochawesome",
+        "preprocessors",
         "upsert"
     ]
 }

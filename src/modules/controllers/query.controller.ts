@@ -1,7 +1,7 @@
 import { ApiController, Controller, HttpPost } from 'dinoloop';
 import { IBatchQuery, IBatchResult } from '../models/iquery';
 import { Utility } from '../utility';
-import { QueryExecute } from '../executors/query.execute';
+import { QueryExecute } from '../executors/query-execute';
 
 @Controller('')
 export class QueryController extends ApiController {

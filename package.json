@@ -23,19 +23,39 @@
         "build:example:basic": "npm run build --prefix ./examples/basic",
         "build": "rpm run clean && tsc --p ./tsconfig.json",
         "clean": "rimraf dist",
-        "start": "npm run build"
+        "lint": "tslint -p ./tsconfig.app.json -c ./tslint.json \"./src/**/*.ts*\"",
+        "lint:test": "tslint -p ./tsconfig.spec.json -c ./tslint.json \"./tests/**/*.ts*\"",
+        "start": "npm run build",
+        "test:unit": "karma start ./tests/unit/karma.conf.js",
+        "test": "jasmine-ts JASMINE_CONFIG_PATH=spec/support/jasmine.json"
     },
     "dependencies": {
-        "body-parser": "^1.18.3",
+        "body-parser": "~1.18.3",
         "dinoloop": "^2.1.0",
-        "express": "^4.16.3"
+        "express": "~4.16.3"
     },
     "devDependencies": {
         "@types/express": "^4.11.1",
+        "@types/jasmine": "~3.3.9",
         "@types/node": "^10.0.22",
-        "rimraf": "^2.5.2",
+        "@types/supertest": "^2.0.4",
+        "jasmine": "~3.3.1",
+        "jasmine-spec-reporter": "~4.2.1",
+        "jasmine-ts": "~0.2.1",
+        "karma": "~2.0.5",
+        "karma-chrome-launcher": "~2.2.0",
+        "karma-jasmine": "~2.0.1",
+        "karma-jasmine-html-reporter": "~1.4.0",
+        "karma-typescript": "~3.0.12",
+        "mocha": "~5.2.0",
+        "mochawesome": "~3.0.2",
+        "moq.ts": "~2.6.1",
+        "rimraf": "~2.5.2",
         "source-map-support": "~0.5.10",
-        "typescript": "~2.4.2"
+        "supertest": "~3.1.0",
+        "ts-mocha": "~1.2.0",
+        "ts-node": "~6.0.5",
+        "typescript": "^2.8.1"
     },
     "engines": {
         "node": ">= 8.10.x",
