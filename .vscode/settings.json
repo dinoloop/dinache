@@ -4,6 +4,9 @@
         "documentation": true,
         "dist": true,
         "public": true,
+        "package-lock.json": true,
+        ".vs": true,
+        "coverage": true,
         "**/*.js": {
             "when": "$(basename).ts"
         }
