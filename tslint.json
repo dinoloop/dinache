@@ -137,7 +137,7 @@
             }
         ],
         "import-spacing": true,
-        "newline-before-return": true,
+        "newline-before-return": false,
         "one-line": [
             true,
             "check-open-brace",

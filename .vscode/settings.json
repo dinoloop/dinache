@@ -6,6 +6,7 @@
         "public": true,
         "package-lock.json": true,
         ".vs": true,
+        "mochawesome-report": true,
         "coverage": true,
         "**/*.js": {
             "when": "$(basename).ts"
@@ -30,7 +31,9 @@
         "kjhtml",
         "kkonkula",
         "mochawesome",
+        "npmignore",
         "preprocessors",
+        "repo",
         "upsert"
     ]
 }

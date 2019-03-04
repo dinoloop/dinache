@@ -2,7 +2,8 @@ export enum OPERATION {
     GET = 'GET',
     PUT = 'PUT',
     UPSERT = 'UPSERT',
-    DELETE = 'DELETE'
+    DELETE = 'DELETE',
+    UPDATE = 'UPDATE'
 }
 
 export interface IQuery {

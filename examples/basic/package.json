@@ -9,7 +9,7 @@
         "start": "npm run build && npm run serve"
     },
     "dependencies": {
-        "dinache": "~0.0.1"
+        "dinache": "^0.0.1"
     },
     "devDependencies": {
         "@types/node": "~11.9.5",

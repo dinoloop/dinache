@@ -15,6 +15,10 @@ export class QueryExecute {
             Cache.upsert(q.key, q.value);
         } else if (q.op === OPERATION.DELETE) {
             Cache.delete(q.key);
+        } else if (q.op === OPERATION.UPDATE) {
+            if (Cache.update(q.key, q.value) === false) {
+                result.error = 'KEY_NOT_EXISTS';
+            }
         } else {
             result.error = 'INVALID_OP - POSSIBLE VALUES [GET | PUT | UPSERT | DELETE]';
         }

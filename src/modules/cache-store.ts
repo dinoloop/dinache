@@ -24,6 +24,15 @@ export class CacheStore {
             this.data[key] = value;
         }
     }
+
+    update<T>(key: string, value: T): boolean {
+        if (this.data[key] === undefined) {
+            return false;
+        } else {
+            this.data[key] = value;
+            return true;
+        }
+    }
 }
 
 export const Cache = new CacheStore();

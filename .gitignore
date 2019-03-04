@@ -63,3 +63,4 @@ dist
 public
 .vs
 package-lock.json
+mochawesome-report
