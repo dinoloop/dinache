@@ -155,3 +155,6 @@ You can also execute batch queries instead of making subsequent calls to server 
 ```
 ## License
 MIT Licensed.
+
+## Contact
+Please direct the issues and feature requests to [Github](https://github.com/dinoloop/dinache/issues). Send your queries/questions on [Gitter](https://gitter.im/dinache-lobby/community).
